@@ -1,27 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Life Journey</title>
+  <meta name="description" content="Start a conversation. Reach out and share where you are on your journey.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Life</h2>
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+  <a class="nav__logo" href="index.html">Life<span>.</span></a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journey.html">Journey</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav__actions">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<section class="page">
-  <h1>Contact</h1>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="journey.html">Journey</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
 
-  <form>
-    <input type="text" placeholder="Your Name"><br><br>
-    <input type="email" placeholder="Your Email"><br><br>
-    <textarea placeholder="Message"></textarea><br><br>
-    <button>Send</button>
-  </form>
+<div class="page-wrapper">
 
-</section>
+  <!-- ── Page Hero ── -->
+  <div class="page-hero section">
+    <div class="container">
+      <div class="page-hero__tag reveal">
+        <span class="label">Get in Touch</span>
+      </div>
+      <h1 class="page-hero__title reveal reveal-delay-1">Let's<br><em style="color: var(--gold);">Connect</em></h1>
+      <p class="page-hero__subtitle reveal reveal-delay-2">
+        Share where you are on your journey. Ask a question. Start a conversation. Every great connection begins with a single message.
+      </p>
+    </div>
+  </div>
 
+  <!-- ── Contact Content ── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Column -->
+        <div class="contact-info">
+          <div class="reveal">
+            <div class="divider"></div>
+            <h2>A Note on Connection</h2>
+          </div>
+          <p class="reveal reveal-delay-1">
+            This journey is deeply personal — but it doesn't have to be solitary. The most profound growth often happens in conversation, when an outside perspective illuminates something we couldn't see on our own.
+          </p>
+          <p class="reveal reveal-delay-2">
+            Reach out. Whether you're at the beginning, the middle, or deep in a difficult phase — there's value in sharing the path.
+          </p>
+
+          <div class="contact-details reveal reveal-delay-3">
+            <div class="contact-detail">
+              <span class="contact-detail__icon">✉️</span>
+              <div>
+                <div class="contact-detail__label">Email</div>
+                <div class="contact-detail__val">hello@lifejourney.com</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail__icon">🌍</span>
+              <div>
+                <div class="contact-detail__label">Availability</div>
+                <div class="contact-detail__val">Open to conversations worldwide</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail__icon">⏱</span>
+              <div>
+                <div class="contact-detail__label">Response Time</div>
+                <div class="contact-detail__val">Usually within 24–48 hours</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form reveal reveal-delay-2" id="contactFormWrapper">
+          <div id="formContent">
+            <div style="margin-bottom: 32px;">
+              <span class="label">Send a Message</span>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name">
+                  <div class="form-error" id="firstNameError">Please enter your first name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name">
+                  <div class="form-error" id="lastNameError">Please enter your last name.</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+                <div class="form-error" id="emailError">Please enter a valid email address.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">What's this about?</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a topic…</option>
+                  <option value="journey">My personal journey</option>
+                  <option value="clarity">Finding clarity</option>
+                  <option value="discipline">Building discipline</option>
+                  <option value="growth">Personal growth</option>
+                  <option value="other">Something else</option>
+                </select>
+                <div class="form-error" id="subjectError">Please select a topic.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Share what's on your mind — where you are, what you're working through, or what you'd like to explore…"></textarea>
+                <div class="form-error" id="messageError">Please write your message (at least 20 characters).</div>
+              </div>
+
+              <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;" id="submitBtn">
+                <span id="submitText">Send Message →</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon">✨</div>
+            <h3>Message Received</h3>
+            <p>Thank you for reaching out. Your message is a step on the journey itself. I'll be in touch within 24–48 hours.</p>
+            <button class="btn btn--outline" style="margin-top: 24px;" onclick="resetForm()">Send Another →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html" style="display:inline-flex;">Life<span>.</span></a>
+        <p>A framework for purposeful living. Clarity, discipline, and growth — the three pillars of an extraordinary life.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Life Journey. All rights reserved.</span>
+      <span class="footer__made">Crafted with <span>♥</span></span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
