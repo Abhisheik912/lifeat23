@@ -1,32 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>Life Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Journey — Clarity. Discipline. Growth.</title>
+  <meta name="description" content="A philosophy of purposeful living. Build a meaningful life through clarity, discipline, and deliberate growth.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Life</h2>
-  <ul>
-    <li><a href="index.html">Home</a></li>
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+  <a class="nav__logo" href="index.html">Life<span>.</span></a>
+
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="journey.html">Journey</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
+
+  <div class="nav__actions">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+      🌙
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<section class="hero">
-  <h1>Build a Meaningful Life</h1>
-  <p>Clarity. Discipline. Growth.</p>
-</section>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="journey.html">Journey</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-<section class="cards">
-  <div class="card">Clarity</div>
-  <div class="card">Growth</div>
-  <div class="card">Discipline</div>
-</section>
+<div class="page-wrapper">
 
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="hero__eyebrow-line"></span>
+        <span class="label">A philosophy of living</span>
+      </div>
+
+      <h1 class="hero__title reveal reveal-delay-1">
+        Build a<br><em>Meaningful</em><br>Life
+      </h1>
+
+      <p class="hero__subtitle reveal reveal-delay-2">
+        Clarity brings focus. Discipline builds momentum. Growth transforms who you are. Three principles — one extraordinary life.
+      </p>
+
+      <div class="hero__cta reveal reveal-delay-3">
+        <a href="journey.html" class="btn btn--primary">Explore the Journey →</a>
+        <a href="about.html" class="btn btn--outline">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ── Three Pillars ── -->
+  <section class="section pillars">
+    <div class="container">
+      <div class="reveal" style="text-align:center; margin-bottom: 52px;">
+        <span class="label">The Framework</span>
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 12px;">Three Pillars of a<br>Purposeful Life</h2>
+      </div>
+
+      <div class="pillars__grid">
+        <div class="pillar-card reveal reveal-delay-1">
+          <span class="pillar-card__icon">🔮</span>
+          <div class="pillar-card__num">01</div>
+          <h3>Clarity</h3>
+          <p>Know what truly matters. Strip away noise and distraction. A clear mind sees through complexity and finds the essential path forward.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-2">
+          <span class="pillar-card__icon">⚡</span>
+          <div class="pillar-card__num">02</div>
+          <h3>Discipline</h3>
+          <p>Consistency over intensity. The daily practice of doing what needs to be done, whether or not you feel like it. This is where character is forged.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-3">
+          <span class="pillar-card__icon">🌱</span>
+          <div class="pillar-card__num">03</div>
+          <h3>Growth</h3>
+          <p>Every experience — especially failure — is material for transformation. Embrace the discomfort. The person you become is worth it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Quote ── -->
+  <section class="section quote-section">
+    <div class="container">
+      <div class="reveal">
+        <blockquote>
+          "The secret of change is to focus all your energy not on fighting the old, but on building the new."
+        </blockquote>
+        <cite>— Socrates</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Banner ── -->
+  <section class="section--sm cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div class="reveal">
+          <span class="label">Begin today</span>
+          <h2 style="margin-top: 16px;">Your journey starts<br><em>right now</em></h2>
+          <p style="margin-top: 16px; margin-bottom: 40px;">The best time to start was yesterday. The second best time is this moment. Every extraordinary life began with a single, deliberate step.</p>
+          <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="journey.html" class="btn btn--primary">View the Journey →</a>
+            <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html" style="display:inline-flex;">Life<span>.</span></a>
+        <p>A framework for purposeful living. Clarity, discipline, and growth — the three pillars of an extraordinary life.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Life Journey. All rights reserved.</span>
+      <span class="footer__made">Crafted with <span>♥</span></span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

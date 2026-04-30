@@ -1,26 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Life Journey</title>
+  <meta name="description" content="Life is about growth, learning, and evolving through every experience. Discover the philosophy behind the journey.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Life</h2>
-  <ul>
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+  <a class="nav__logo" href="index.html">Life<span>.</span></a>
+  <ul class="nav__links" id="navLinks">
     <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="journey.html">Journey</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
+  <div class="nav__actions">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<section class="page">
-  <h1>About Life</h1>
-  <p>
-    Life is about growth, learning, and evolving through experiences.
-    Every challenge shapes a stronger version of you.
-  </p>
-</section>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="journey.html">Journey</a>
+  <a href="contact.html">Contact</a>
+</div>
 
+<div class="page-wrapper">
+
+  <!-- ── Page Hero ── -->
+  <div class="page-hero section">
+    <div class="container">
+      <div class="page-hero__tag reveal">
+        <span class="label">The Philosophy</span>
+      </div>
+      <h1 class="page-hero__title reveal reveal-delay-1">About<br><em style="color: var(--gold);">This Life</em></h1>
+      <p class="page-hero__subtitle reveal reveal-delay-2">
+        Life is not a destination — it's a continuous process of becoming. Every challenge is an invitation to grow beyond your current limits.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── About Content ── -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="reveal">
+            <div class="divider"></div>
+            <h2>Every Challenge Shapes a<br>Stronger Version of You</h2>
+          </div>
+          <p class="reveal reveal-delay-1">
+            Life is about growth, learning, and evolving through experience. Not the curated, polished version we present to the world — but the raw, honest process of confronting who we are and choosing who we want to become.
+          </p>
+          <p class="reveal reveal-delay-2">
+            The path is rarely linear. It winds through failure, doubt, and confusion before arriving at moments of profound clarity. This is not a flaw in the design — it is the design.
+          </p>
+          <p class="reveal reveal-delay-3">
+            The three pillars — Clarity, Discipline, and Growth — aren't a formula. They're a way of orienting yourself toward the life you genuinely want to live, one deliberate choice at a time.
+          </p>
+          <div class="reveal reveal-delay-4">
+            <a href="journey.html" class="btn btn--primary" style="margin-top: 16px;">See the Journey →</a>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat reveal">
+            <div class="stat__num">3</div>
+            <div class="stat__label">Core Pillars</div>
+          </div>
+          <div class="stat reveal reveal-delay-1">
+            <div class="stat__num">∞</div>
+            <div class="stat__label">Lessons Available</div>
+          </div>
+          <div class="stat reveal reveal-delay-2">
+            <div class="stat__num">1</div>
+            <div class="stat__label">Life to Live</div>
+          </div>
+          <div class="stat reveal reveal-delay-3">
+            <div class="stat__num">Now</div>
+            <div class="stat__label">Best Time to Start</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Values ── -->
+  <section class="section" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="reveal" style="margin-bottom: 48px;">
+        <span class="label">Core Values</span>
+        <h2 style="font-size: clamp(2rem, 3.5vw, 2.8rem); margin-top: 12px;">What We Believe</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <h4>Honesty First</h4>
+          <p>Real growth begins with brutal honesty about where you are right now — not where you wish you were.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <h4>Process Over Outcome</h4>
+          <p>Fall in love with the daily work. Outcomes are the byproduct of showing up consistently over time.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <h4>Embrace Failure</h4>
+          <p>Every failure contains a lesson that success cannot teach. The people who grow fastest are those who fail the most thoughtfully.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-3">
+          <h4>Long-Term Thinking</h4>
+          <p>Short-term sacrifice for long-term gain. Plant seeds today whose shade you may never sit under — and do it anyway.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-4">
+          <h4>Intentional Living</h4>
+          <p>Most people drift. Choose instead to be deliberate — about your time, your relationships, your energy, your attention.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-5">
+          <h4>Continuous Learning</h4>
+          <p>The day you stop learning is the day you start declining. Stay curious, stay humble, stay hungry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section--sm cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div class="reveal">
+          <span class="label">Ready?</span>
+          <h2 style="margin-top: 16px;">Trace the<br><em>full journey</em></h2>
+          <p style="margin-top: 16px; margin-bottom: 40px;">See every phase of the path — from the first spark of awareness to the ongoing practice of consistent growth.</p>
+          <a href="journey.html" class="btn btn--primary">View the Journey →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html" style="display:inline-flex;">Life<span>.</span></a>
+        <p>A framework for purposeful living. Clarity, discipline, and growth — the three pillars of an extraordinary life.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Life Journey. All rights reserved.</span>
+      <span class="footer__made">Crafted with <span>♥</span></span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

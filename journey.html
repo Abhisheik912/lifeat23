@@ -1,24 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey — Life Journey</title>
+  <meta name="description" content="Trace the phases of a meaningful life — from awareness through consistency, growth, and mastery.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Life</h2>
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+  <a class="nav__logo" href="index.html">Life<span>.</span></a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journey.html" class="active">Journey</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav__actions">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<section class="page">
-  <h1>Journey</h1>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="journey.html" class="active">Journey</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-  <div class="timeline-item">Start → Awareness</div>
-  <div class="timeline-item">Failure → Learning</div>
-  <div class="timeline-item">Consistency → Growth</div>
+<div class="page-wrapper">
 
-</section>
+  <!-- ── Page Hero ── -->
+  <div class="page-hero section">
+    <div class="container">
+      <div class="page-hero__tag reveal">
+        <span class="label">The Roadmap</span>
+      </div>
+      <h1 class="page-hero__title reveal reveal-delay-1">The<br><em style="color: var(--gold);">Journey</em></h1>
+      <p class="page-hero__subtitle reveal reveal-delay-2">
+        No meaningful life follows a straight line. Here is the honest map — the phases, the turns, the setbacks, and the breakthroughs.
+      </p>
+    </div>
+  </div>
 
+  <!-- ── Phase Overview ── -->
+  <section class="section--sm" style="border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="reveal" style="margin-bottom: 32px;">
+        <span class="label">5 Phases</span>
+      </div>
+      <div class="phases-intro">
+        <div class="phase-chip reveal">
+          <div class="phase-chip__num">01</div>
+          <div class="phase-chip__name">Awareness</div>
+        </div>
+        <div class="phase-chip reveal reveal-delay-1">
+          <div class="phase-chip__num">02</div>
+          <div class="phase-chip__name">Struggle</div>
+        </div>
+        <div class="phase-chip reveal reveal-delay-2">
+          <div class="phase-chip__num">03</div>
+          <div class="phase-chip__name">Learning</div>
+        </div>
+        <div class="phase-chip reveal reveal-delay-3">
+          <div class="phase-chip__num">04</div>
+          <div class="phase-chip__name">Consistency</div>
+        </div>
+        <div class="phase-chip reveal reveal-delay-4">
+          <div class="phase-chip__num">05</div>
+          <div class="phase-chip__name">Growth</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Timeline ── -->
+  <section class="section">
+    <div class="container">
+      <div class="timeline">
+
+        <div class="timeline-entry reveal">
+          <div class="timeline-entry__dot">
+            <div class="timeline-entry__dot-inner"></div>
+          </div>
+          <div class="timeline-entry__content">
+            <div class="timeline-entry__phase">Phase 01</div>
+            <h3 class="timeline-entry__title">Start → Awareness</h3>
+            <p class="timeline-entry__body">
+              Everything begins with a moment of clarity — when you first see the gap between who you are and who you could be. This awareness is uncomfortable, even painful. But it is also the most important gift you can give yourself. Without seeing clearly, there is no direction. And without direction, all movement is just noise.
+            </p>
+            <div class="timeline-entry__tags">
+              <span class="tag">Mindfulness</span>
+              <span class="tag">Self-honesty</span>
+              <span class="tag">Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-entry reveal reveal-delay-1">
+          <div class="timeline-entry__dot">
+            <div class="timeline-entry__dot-inner"></div>
+          </div>
+          <div class="timeline-entry__content">
+            <div class="timeline-entry__phase">Phase 02</div>
+            <h3 class="timeline-entry__title">Comfort Zone → Resistance</h3>
+            <p class="timeline-entry__body">
+              Every meaningful pursuit begins with resistance. Your mind, your habits, your environment — all conspiring to keep you where you are. This is not failure. This is the test. The people who grow are not those who feel no resistance; they are those who act in spite of it. Resistance is proof you're heading somewhere worthwhile.
+            </p>
+            <div class="timeline-entry__tags">
+              <span class="tag">Courage</span>
+              <span class="tag">Action Bias</span>
+              <span class="tag">Discomfort</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-entry reveal reveal-delay-2">
+          <div class="timeline-entry__dot">
+            <div class="timeline-entry__dot-inner"></div>
+          </div>
+          <div class="timeline-entry__content">
+            <div class="timeline-entry__phase">Phase 03</div>
+            <h3 class="timeline-entry__title">Failure → Learning</h3>
+            <p class="timeline-entry__body">
+              You will fail. Repeatedly. This is not a detour from the path — it is the path. Each failure carries a lesson that success cannot teach. The question is not whether you will fall; it is whether you will extract the lesson and carry it forward, or simply feel the shame and retreat. Failures are investments. Make them count.
+            </p>
+            <div class="timeline-entry__tags">
+              <span class="tag">Resilience</span>
+              <span class="tag">Reflection</span>
+              <span class="tag">Iteration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-entry reveal">
+          <div class="timeline-entry__dot">
+            <div class="timeline-entry__dot-inner"></div>
+          </div>
+          <div class="timeline-entry__content">
+            <div class="timeline-entry__phase">Phase 04</div>
+            <h3 class="timeline-entry__title">Consistency → Momentum</h3>
+            <p class="timeline-entry__body">
+              The turning point never arrives in a dramatic flash. It accumulates, quietly, through a thousand unremarkable days of showing up. Consistency is not glamorous. It doesn't trend. But it is the only real mechanism of transformation. When you stop waiting for motivation and start building systems, momentum becomes inevitable.
+            </p>
+            <div class="timeline-entry__tags">
+              <span class="tag">Systems</span>
+              <span class="tag">Habits</span>
+              <span class="tag">Discipline</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-entry reveal reveal-delay-1">
+          <div class="timeline-entry__dot">
+            <div class="timeline-entry__dot-inner"></div>
+          </div>
+          <div class="timeline-entry__content">
+            <div class="timeline-entry__phase">Phase 05</div>
+            <h3 class="timeline-entry__title">Consistency → Growth</h3>
+            <p class="timeline-entry__body">
+              Growth is not an event. It's what happens when you look back after months or years and barely recognize the person you used to be. The habits compound. The lessons integrate. The character hardens and softens in exactly the right places. This is not the end of the journey — it's the beginning of a new cycle at a higher level.
+            </p>
+            <div class="timeline-entry__tags">
+              <span class="tag">Transformation</span>
+              <span class="tag">Identity</span>
+              <span class="tag">Mastery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section--sm cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div class="reveal">
+          <span class="label">The Next Step</span>
+          <h2 style="margin-top: 16px;">Walk this path<br><em>together</em></h2>
+          <p style="margin-top: 16px; margin-bottom: 40px;">Reach out and share where you are on your journey. Every phase has its challenges — and its rewards.</p>
+          <a href="contact.html" class="btn btn--primary">Start a Conversation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html" style="display:inline-flex;">Life<span>.</span></a>
+        <p>A framework for purposeful living. Clarity, discipline, and growth — the three pillars of an extraordinary life.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Life Journey. All rights reserved.</span>
+      <span class="footer__made">Crafted with <span>♥</span></span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
